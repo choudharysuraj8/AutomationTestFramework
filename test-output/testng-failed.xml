@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [Leads_Suite]" parallel="classes">
+  <test thread-count="3" name="Leads_SuiteDesktop(failed)" parallel="classes">
+    <classes>
+      <class name="com.qa.flight.FlightBookingTest">
+        <methods>
+          <include name="verifyFlightBooking"/>
+          <include name="setUpMethod"/>
+        </methods>
+      </class> <!-- com.qa.flight.FlightBookingTest -->
+    </classes>
+  </test> <!-- Leads_SuiteDesktop(failed) -->
+</suite> <!-- Failed suite [Leads_Suite] -->
