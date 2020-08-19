@@ -2,8 +2,10 @@ package com.qa.base;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.ITestContext;
@@ -14,7 +16,7 @@ import net.bytebuddy.jar.asm.Opcodes;
 
 public class ApplicationBase {
 
-	WebDriver driver;
+	public static WebDriver driver;
 	private String dataFileName;
 	protected String className;
 	protected static ThreadLocal<String> testMethodName = new ThreadLocal<String>();
@@ -72,9 +74,14 @@ public class ApplicationBase {
         options.addArguments("--disable-dev-shm-usage");
         // options.addArguments("--headless");
         options.setExperimentalOption("useAutomationExtension", false);
-    	System.setProperty("webdriver.chrome.driver", "D:\\Suraj\\workspace\\AutomationTestFramework\\lib\\chromedriver\\chromedriver.exe");
+    
+    	System.setProperty("webdriver.chrome.driver", "E://workspace3//AutomationProject//chromedriver//chromedriver.exe");
         ChromeDriver driver = new ChromeDriver(options);
+            driver.manage().timeouts().implicitlyWait(10000, TimeUnit.SECONDS);
+            driver.manage().window().maximize();
 		return driver;
     	
     }
+    
+   
 }
