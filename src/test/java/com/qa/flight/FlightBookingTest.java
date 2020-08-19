@@ -8,7 +8,7 @@ public class FlightBookingTest extends ApplicationBase{
 
 	@Test
 	public void verifyFlightBooking() {
-		System.out.println("Flight Booking");
+		System.out.println("Flight Booking/ Flight book");
 	}
 	
 }
