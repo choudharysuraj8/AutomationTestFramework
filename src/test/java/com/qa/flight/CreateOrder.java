@@ -32,7 +32,7 @@ public class CreateOrder extends ApplicationBase{
 		
 		 driver.get("http://automationpractice.com/index.php");
 		 	// driver.navigate().to("http://automationpractice.com/index.php");	 
-		System.out.println("login page");
+		System.out.println("login page newbranch");
 		//click on sign In button 	 
 		
 		JSONObject filedata=JsonRead.extractData_JSON("E://workspace3//AutomationTestFramework-master//AutomationTestFramework-master//src//test//resources//logindata.json");
